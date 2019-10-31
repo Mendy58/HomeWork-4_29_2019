@@ -1,7 +1,11 @@
-﻿@{
-    ViewData["Title"] = "About";
-}
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
-
-<p>Use this area to provide additional information.</p>
+﻿<div class="row">
+	<div class="col-md-6 col-md-offset-3 well">
+		<form method="post" action="/Home/UploadImage" enctype="multipart/form-data">
+			<input type="file" name="myFile" />
+			<br />
+			<label>Title of photo</label>
+			<input type="text" name="Title" />
+			<button class="btn btn-primary">Upload</button>
+		</form>
+	</div>
+</div>
